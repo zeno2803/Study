@@ -3,6 +3,7 @@
 
 from Test.TestClass import *
 from Function import convert_to_title
+from Manu.Bank import *
 import logging
 import datetime
 
@@ -31,6 +32,11 @@ def main():
     # test_object.display()
     # test_object.message = "I am a very lazy lazy boy"
     # print test_object.message
+
+    test_obj = Bank('Abhishek', '1234567890')
+    print 'Bank Details : \n'
+    test_obj.deposit(100)
+    print '\n', test_obj.name, test_obj.account_id, test_obj.balance
 
     print convert_to_title(2), convert_to_title(1), convert_to_title(25), convert_to_title(26), convert_to_title(27), \
         convert_to_title(52)
